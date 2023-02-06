@@ -8,14 +8,12 @@ middle_name: S.
 last_name: Kelley Kieffer
 email: lucas.kelley.kieffer@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple theme. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
+  A simple theme.
+footer_text: > # the ">" symbol means to ignore newlines until "keywords:"
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
-
+keywords:  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
+icon: 👩‍💻  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 url: https://lucaskelleykieffer.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
@@ -65,7 +63,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: LucasKelleyKieffer
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
@@ -96,7 +94,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  To contact me, please send an email by clicking the appropriate icon above.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -112,9 +110,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
+blog_name: Documentation # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_description: A love letter to my future self. 🖤
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -125,10 +123,10 @@ pagination:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
 # the information below.
 giscus:
-  repo: alshedivat/al-folio      # <your-github-user-name>/<your-github-repo-name>
-  repo_id: MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==
-  category: Comments             # name of the category under which discussions will be created
-  category_id: DIC_kwDOA5PmLc4CTBt6
+  repo: LucasKelleyKieffer/LucasKelleyKieffer.github.io      # <your-github-user-name>/<your-github-repo-name>
+  repo_id: R_kgDOI6kUQw
+  category: General             # name of the category under which discussions will be created
+  category_id: DIC_kwDOI6kUQ84CUCef
   mapping: title                 # identify discussions by post title
   strict: 1                      # use strict identification mode
   reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
