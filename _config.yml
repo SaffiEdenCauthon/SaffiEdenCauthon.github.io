@@ -8,7 +8,7 @@ middle_name: S.
 last_name: Kelley Kieffer
 email: lucas.kelley.kieffer@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme. Based on [*folio](https://github.com/bogoli/-folio) design.
+  A simple theme. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
