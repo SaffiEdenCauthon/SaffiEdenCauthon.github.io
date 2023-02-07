@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
+title: Industrial Equipment
+description: Showcase For Controls Overhaul
+img: assets/img/projects/work_02/blurred_img.png
+importance: 2
 category: work
 ---
 
