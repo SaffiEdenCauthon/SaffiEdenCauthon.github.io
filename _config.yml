@@ -11,7 +11,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple theme.
 footer_text: > # the ">" symbol means to ignore newlines until "keywords:"
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords:  # add your own keywords or leave empty
+keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 👩‍💻  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 url: https://lucaskelleykieffer.github.io # the base hostname & protocol for your site
@@ -123,9 +123,9 @@ pagination:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
 # the information below.
 giscus:
-  repo: LucasKelleyKieffer/LucasKelleyKieffer.github.io      # <your-github-user-name>/<your-github-repo-name>
+  repo: LucasKelleyKieffer/LucasKelleyKieffer.github.io # <your-github-user-name>/<your-github-repo-name>
   repo_id: R_kgDOI6kUQw
-  category: General             # name of the category under which discussions will be created
+  category: General              # name of the category under which discussions will be created
   category_id: DIC_kwDOI6kUQ84CUCef
   mapping: title                 # identify discussions by post title
   strict: 1                      # use strict identification mode
@@ -136,15 +136,12 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+disqus_shortname:  # none for now
 
 # External sources.
 # If you have blog posts published on medium.com or other exteranl sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+external_sources: # none for now
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -238,7 +235,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
+display_tags: ['formatting', 'images', 'links', 'code'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -331,7 +328,7 @@ enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
 enable_masonry:             true   # enables automatic project cards arangement
-enable_math:                true   # enables math typesetting (uses MathJax)
+enable_math:                false  # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
