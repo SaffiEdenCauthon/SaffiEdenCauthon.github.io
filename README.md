@@ -8,4 +8,4 @@ This website is based off of
 ## License
 The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/master/LICENSE).
 
-Originally, this website was based on the [al-folio](https://github.com/alshedivat/al-folio) project. Since, many updates have taken place to make this customized for my application style.
+Originally, this website was based on the [al-folio](https://github.com/alshedivat/al-folio) project. Since then, many updates have taken place to make this website customized for my use.

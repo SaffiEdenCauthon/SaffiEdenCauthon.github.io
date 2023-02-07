@@ -9,7 +9,7 @@ categories: story
 
 My website wouldn't be complete if it didn't mention Fast InvSqrt().
 
-This function is what made me interested in software engineering.
+This function is what made me interested in software engineering and the reason I chose [OPS Controls](https://www.opscontrols.com/) as the starting point of my career. I simply find bit-wise operations fun.
 
 In short, this is how lighting and reflection calculations are done in the 1999 video game *[Quake III Arena](https://youtu.be/cyCgMQvG_rc?t=217)*.
 

@@ -3,11 +3,8 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: >
-  This account is for my professional career.
-  
-  Due to the nature of my current employment, this page will have only a few examples to hold the template features.
-
-  For personal projects, contact me using the information on my about page.
+  <p>Due to the nature of my current employment, this page may only have a few examples.</p>
+  <p>For personal repositories, contact me using the information on my home page.</p>
 nav: true
 nav_order: 3
 ---

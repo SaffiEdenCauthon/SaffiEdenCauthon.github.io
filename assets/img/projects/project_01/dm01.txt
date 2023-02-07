@@ -1,0 +1,102 @@
+case TPCM_BAM:
+{
+    //reset the buffer for the newest broadcast
+    for (int i = 0; i < TPDT_BUFFER_SIZE; ++i)
+    {
+        TPDT_Buffer[i] = 0x00;
+    }
+
+    TPCM_BAM_TotalMessageSize        = decode(frame->data,  8, 16, false, false, 1, 0);
+    TPCM_BAM_TotalNumberOfPackets    = decode(frame->data, 24,  8, false, false, 1, 0);
+    TPCM_BAM_PGNOfThePacketedMessage = decode(frame->data, 40, 24, false, false, 1, 0);
+
+    //qDebug() << TPCM_BAM_TotalMessageSize << TPCM_BAM_TotalNumberOfPackets << TPCM_BAM_PGNOfThePacketedMessage;
+
+    break;
+}
+
+case TPDT:
+{
+    float TPDT_SequenceNumber = decode(frame->data,  0, 8, false, false, 1, 0);
+
+    int seq_num = static_cast<int>(TPDT_SequenceNumber) - 1;
+
+    //qDebug() << "Seq Num" << seq_num;
+
+    for (int i = 1; i < 8; ++i)
+    {
+        int array_number = (i - 1) + (seq_num * 7);
+
+        //qDebug() << "For loop: " << array_number << TPDT_Buffer[array_number] << i << frame->data[i];
+
+        TPDT_Buffer[array_number] = frame->data[i];
+    }
+
+        //qDebug() << TPDT_Buffer[0] << TPDT_Buffer[1] << TPDT_Buffer[2] << TPDT_Buffer[3] << TPDT_Buffer[4] << TPDT_Buffer[5] << TPDT_Buffer[6] << TPDT_Buffer[7];
+
+        //qDebug() << TPDT_Buffer[8] << TPDT_Buffer[9] << TPDT_Buffer[10] << TPDT_Buffer[11] << TPDT_Buffer[12] << TPDT_Buffer[13] << TPDT_Buffer[14] << TPDT_Buffer[15];
+
+        //qDebug() << "==";
+
+    if (TPDT_SequenceNumber == TPCM_BAM_TotalNumberOfPackets)
+    {
+            //qDebug() << "I'm in";
+
+        switch (static_cast<int>(TPCM_BAM_PGNOfThePacketedMessage))
+        {
+            case 0xFECA:
+            {
+                int number_of_dtcs = ((TPCM_BAM_TotalMessageSize) - 2) / 4;
+
+                //qDebug() << "Should have this number of DTCs" << number_of_dtcs;
+
+                //Create struct to hold the new diagnostic message
+                DiagMsg temp[number_of_dtcs];
+
+                //Decode frame data
+                //lamps
+                engine->setDM01_ProtectLamp(decode(TPDT_Buffer, 0, 2, false, false, 1, 0));
+                engine->setDM01_AmberWarningLamp(decode(TPDT_Buffer, 2, 2, false, false, 1, 0));
+                engine->setDM01_RedStopLamp(decode(TPDT_Buffer, 4, 2, false, false, 1, 0));
+                engine->setDM01_MalfunctionIndicatorLamp(decode(TPDT_Buffer, 6, 2, false, false, 1, 0));
+                engine->setDM01_FlashProtectLamp(decode(TPDT_Buffer, 8, 2, false, false, 1, 0));
+                engine->setDM01_FlashAmberWarningLamp(decode(TPDT_Buffer, 10, 2, false, false, 1, 0));
+                engine->setDM01_FlashRedStopLamp(decode(TPDT_Buffer, 12, 2, false, false, 1, 0));
+                engine->setDM01_FlashMalfunctionIndicatorLamp(decode(TPDT_Buffer, 14, 2, false, false, 1, 0));
+
+                //handle lamps (find what lamp to display on gauge_screen.qml)
+                handleHighestLamp();
+
+                for (int i = 0; i < number_of_dtcs; ++i)
+                {
+                    //fmi&spn (not using can_encode_decode_inl.h functions because doesn't work for SPN?)
+                    temp[i].spnCode = static_cast<u_int32_t>((TPDT_Buffer[4 + (i * 4)] & 0xE0) << 11) + (TPDT_Buffer[3 + (i * 4)] << 8) + (TPDT_Buffer[2 + (i * 4)]);
+                    temp[i].fmiCode = static_cast<u_int8_t> (TPDT_Buffer[4 + (i * 4)] & 0x1F);
+
+                    //get spn description
+                    temp[i].spnDescription = getSpnDesc(temp[i].spnCode);
+
+                    //get fmi description
+                    temp[i].fmiDescription = getFmiDesc(temp[i].fmiCode);
+
+                    //get lamp color
+                    temp[i].lamp = getDtcFaultLamp(temp[i].fmiCode, temp[i].spnCode);
+
+                    temp[i].johnDeereDescription = getJdDesc(temp[i].fmiCode, temp[i].spnCode);
+
+                    //Add the fault
+                    if (temp[i].spnCode != 0 || temp[i].fmiCode != 0)
+                    {
+                        currentFaults->insertFault(temp[i]);
+
+                        //qDebug() << "TPDT: Tried adding: " << temp[i].spnCode << temp[i].fmiCode;
+                    }
+                }
+
+                break;
+            }
+        }
+    }
+
+    break;
+}

@@ -6,7 +6,7 @@ subtitle: Software Engineer
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: hd_selfie.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Findlay, OH 45840</p>
@@ -16,7 +16,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a proven software engineer currently working at [OPS Controls](https://www.opscontrols.com/) with over six years of experience leading, developing, and implementing innovative software applications for company success.
+I am a proven software engineer currently working at [OPS Controls](https://www.opscontrols.com/).
+
+At OPS Controls I have assisted in leading project & solution design, **full-stack software development**, and implementation of software applications within the wireless remote controls, heavy equipment, hydraulic, and industrial controls system industries.
+
+**I have successfully proven to lead and deliver large-scale collaborative projects with industry-leading OEMs** such as Cummins, Screen Machine Industries, Smith-Griffin Armor, Link-Belt Cranes, and Vermeer Corporation.
+
+I have over **six years of experience** leading, developing, and implementing innovative software applications for company success.
 
 My passion is to help integrate clean, efficient, and scalable software to produce the best solution possible.
 

@@ -1,0 +1,38 @@
+void handle_controller_outputs(void)
+{
+    uint8_t b0 = 0;
+
+    // Controller 01
+    os_digout(DO_PWM0, pto_01);
+    os_digout(DO_PWM1, blw_vac);
+    os_digout(DO_PWM2, blw_psi);
+    os_digout(DO_PWM3, valve_01_open);
+    os_digout(DO_PWM4, reel_left);
+    os_digout(DO_PWM5, reel_right);
+    os_digout(DO_OUT0, accel);
+    os_digout(DO_OUT1, decel);
+
+    b0 = b0 & ~(0x01 << 0) | (pto_01        << 0);
+    b0 = b0 & ~(0x01 << 1) | (blw_vac       << 1);
+    b0 = b0 & ~(0x01 << 2) | (blw_psi       << 2);
+    b0 = b0 & ~(0x01 << 3) | (valve_01_open << 3);
+    b0 = b0 & ~(0x01 << 4) | (reel_left     << 4);
+    b0 = b0 & ~(0x01 << 5) | (reel_right    << 5);
+    b0 = b0 & ~(0x01 << 6) | (accel         << 6);
+    b0 = b0 & ~(0x01 << 7) | (decel         << 7);
+
+    (void)os_can_send_message(0x604, 0, 8,
+        b0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF);
+
+    // Controller 02
+    b0 = b0 & ~(0x01 << 0) | (hose_in           << 0);
+    b0 = b0 & ~(0x01 << 1) | (hose_out          << 1);
+    b0 = b0 & ~(0x01 << 2) | (spare_01_mom      << 2);
+    b0 = b0 & ~(0x01 << 3) | (spare_02_mom      << 3);
+    b0 = b0 & ~(0x01 << 4) | (spare_03_latch    << 4);
+    b0 = b0 & ~(0x01 << 5) | (spare_04_latch    << 5);
+    b0 = b0 & ~(0x01 << 6) | (valve_02_open     << 6);
+
+    (void)os_can_send_message(0x605, 0, 8,
+        b0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF);
+}

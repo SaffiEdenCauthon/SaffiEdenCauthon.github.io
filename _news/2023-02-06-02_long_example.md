@@ -19,10 +19,10 @@ inline: false
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/vault/MattCauthon.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/news/2023-02-06-02_long_example/MattCauthon.png" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/vault/ouroboros.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/news/2023-02-06-02_long_example/ouroboros.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
