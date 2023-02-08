@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Bit Level Hacking
-date: 2022-02-06 12:31:00
+date: 2022-02-06 12:30:00-0500
 description: Fast inverse square root
-tags: code
+tags: code, games, fun
 categories: story
 ---
 
-My website wouldn't be complete if it didn't mention Fast InvSqrt().
+### Why Did I Post This?
+
+My website wouldn't be complete if it didn't mention Fast InvSqrt(). I simply owe too much to this one function.
 
 This function is what made me interested in software engineering and the reason I chose [OPS Controls](https://www.opscontrols.com/) as the starting point of my career. I simply find bit-wise operations fun.
 
@@ -17,9 +19,13 @@ You can read more [on Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_squa
 
 ***
 
+### A Quote from Wikipedia
+
 > Fast inverse square root, sometimes referred to as Fast InvSqrt() or by the hexadecimal constant <code>0x5F3759DF</code>, is an algorithm that estimates the reciprocal (or multiplicative inverse) of the square root of a 32-bit floating-point number <code>x</code> in IEEE 754 floating-point format.
 
 ***
+
+### Code from Quake III Arena
 
 {% highlight c linenos %}
 

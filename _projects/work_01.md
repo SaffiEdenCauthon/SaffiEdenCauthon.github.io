@@ -1,36 +1,40 @@
 ---
 layout: page
 title: Aviation Refueler
-description: Showcase for industrial controls
+description: Showcase of Industrial Controls
 img: assets/img/projects/work_01/blurred_img.png
 importance: 1
 category: work
 ---
 
-### Description
+### Project Description & Overview
+> During 2021-2023 I led a collaborative project with industry-leading OEM engineering departments, such as Cummins Inc, to produce a solution capable of controlling an aviation fueler.
 
-During 2021-2023 I led a collaborative project with industry-leading OEM engineering departments, such as Cummins Inc, to produce a solution capable of controlling an aviation fueler. I was solely responsible for integrating full-stack solutions and technologies for this project that pertained to system logic controller hardware. This includes, but is not limited to, network architecture, UX/UI design, system programming, and the creation of several hundred pages of documentation.
+I was solely responsible for integrating full-stack solutions and technologies for this project that pertained to system logic controller hardware. This includes, but is not limited to, network architecture, UX/UI design, system programming, and the creation of several hundred pages of documentation.
 
 This project uses a twelve-inch touch-screen display, two programmable logic controllers, and several small pieces of HMI to interface with the vehicle’s engine. The solution housed several hundred connections to outside inputs and outputs for logical processing and was able to control the refueler chassis.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/work_01/main_screen.png" title="The home page of the primary display." class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work_01/main_screen.png" title="Home Visualization" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    A screenshot of the home visualization for the aviation refueler.
+    A screenshot of the Aviation Refueler's <code>Home visualization</code>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/work_01/menu_screen_01.png" title="The menu visualization of the primary display." class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work_01/menu_screen_01.png" title="Menu Visualization" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    A screenshot of the menu visualization for the aviation refueler.
+    A screenshot of the Aviation Refueler's <code>Menu visualization</code>
 </div>
 
+***
+
+### Showcase: SAE J1939 & IEC 61131-3 Skills
 To integrate wire harnessing requirements, our team was able to make use of [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) to facilitate communication on two separate networks with limited use of physical connections. One network for our solution's proprietary hardware and another to directly interface with Cummins Engine ECUs (Electronic Control Units).
 
 Using these networks, I developed several utilities that became company-standard across strategic partner groups. One such utility was methods that encoded and decoded packet data sent across the J1939 networks. This method allowed the successful decoding of data as defined in the J1939 standard.
@@ -39,16 +43,19 @@ For more information regarding the complex nature of J1939 communication, feel f
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/work_01/PcanSEdt_2023-02-07_12-13-00.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work_01/PcanSEdt_2023-02-07_12-13-00.png" title="PCAN Symbol File" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/work_01/CODESYS_2023-02-07_12-10-15.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work_01/CODESYS_2023-02-07_12-10-15.png" title="CODESYS Decode Message Method" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    An example showing the high-level structure of a PGN (data packet), and the software to decode the array of data.
+    An example showing the high-level structure of a PGN (data packet), and the software to decode the array of data
 </div>
 
+***
+
+### Showcase: C++ & SAE J1939 Transport Protocol
 Other notable examples of expertise in this project come from the software written to interface with active diagnostic troubleshooting codes on a J1939 engine chassis. 
 
 In the code excerpt below, we implement functionality to decode [SAE J1939’s transport protocol](https://www.csselectronics.com/pages/j1939-explained-simple-intro-tutorial#j1939-transport-protocol).
@@ -143,3 +150,6 @@ case TPDT: {
 }
 ```
 {% endraw %}
+<div class="caption">
+    An example showing an excerpt of the implementation of the <code>SAE J1939 Transport Protocol</code> in <code>C++</code>
+</div>
