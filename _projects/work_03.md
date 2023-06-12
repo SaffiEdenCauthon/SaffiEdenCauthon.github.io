@@ -39,7 +39,7 @@ After reviewing the initial documentation proposed by the salesperson, creating 
 //------------------------------------------------------------------------------
 /// \file     user_code.c
 /// \brief    user code
-/// \author   Lucas S. Kelley Kieffer, Senior Software Engineer, OPS Controls
+/// \author   Saffi Kelley Kieffer, Senior Software Engineer, OPS Controls
 /// \date     05.01.2023 (dd/mm/yy)
 /// \version  4.00.00.01
 /// \module   1.041.301.1000 - WPP
@@ -174,7 +174,7 @@ This project used <code>C++</code> and <code>Qt Framework</code> to satisfy cust
 //------------------------------------------------------------------------------
 /// \file     engine_maintenance.h
 /// \brief    QObject to hold information pertaining to engine maintenance
-/// \author   Lucas S. Kelley Kieffer, Senior Software Engineer, OPS Controls
+/// \author   Saffi Kelley Kieffer, Senior Software Engineer, OPS Controls
 /// \date     dd.mm.yyyy
 /// \version  VV.0X.0Y.0Z
 /// \module   [PRODUCT NAME]
@@ -310,7 +310,7 @@ class engine_maintenance : public QObject{
 //------------------------------------------------------------------------------
 /// \file     engine_maintenance.cpp
 /// \brief    QObject to hold information pertaining to engine maintenance
-/// \author   Lucas S. Kelley Kieffer, Senior Software Engineer, OPS Controls
+/// \author   Saffi Kelley Kieffer, Senior Software Engineer, OPS Controls
 /// \date     dd.mm.yyyy
 /// \version  VV.0X.0Y.0Z
 /// \module   [PRODUCT NAME]
