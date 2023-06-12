@@ -1,0 +1,449 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>Common Practices | Saffi Kelley Kieffer</title> <meta name="author" content="Saffi Kelley Kieffer"> <meta name="description" content="Showcase of Common Practices"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous"> <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css"> <link rel="canonical" href="https://saffikelleykieffer.github.io/projects/work_03/"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark"> <script src="/assets/js/theme.js"></script> <script src="/assets/js/dark_mode.js"></script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Saffi </span>Kelley Kieffer</a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about</a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog</a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects</a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories</a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv</a> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fas fa-moon"></i> <i class="fas fa-sun"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5"> <div class="post"> <header class="post-header"> <h1 class="post-title">Common Practices</h1> <p class="post-description">Showcase of Common Practices</p> </header> <article> <h3 id="project-description--overview">Project Description &amp; Overview</h3> <blockquote> <p>I commonly work with several clients to create embedded systems that interface with engine chassis. These projects often differ in complexity but remain remarkably similar.</p> </blockquote> <p>I was solely responsible for integrating full-stack solutions and technologies for many of these projects. However, I have also worked collaboratively with several key stakeholders and outside engineering departments to ensure a quality standard that I hold close to heart.</p> <p>Common core competencies for a common-practice project include developing network architecture, any UX/UI or label design, system programming, and the development of system software requirement specifications or other product documentation and manuals.</p> <p>Common practice includes my introduction to the project after the salesperson receives a lead and has had the chance to walk a customer through a sample configuration document.</p> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <img src="/assets/img/projects/work_03/EXCEL_2023-02-07_12-33-11.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Saleperson Configuration Document" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </div> <div class="caption"> A documented example of a salesperson's initial configuration document for a company labeled <code>CENSORED</code>. </div> <hr> <h3 id="showcase-starting-a-project">Showcase: Starting a Project</h3> <p>From the salesperson’s example, we can see that documentation for the project is off to a <em>fantastic</em> start. That is where communication with key stakeholders and the creation, and review, of a scope of work occurs. Often, I would assist in reviewing these pieces of documentation with my coworkers to ensure company success.</p> <p>After reviewing the initial documentation proposed by the salesperson, creating formal documentation within relevant software files and developing any external documentation for stakeholders would be produced.</p> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//------------------------------------------------------------------------------</span>
+<span class="c1">/// \file     user_code.c</span>
+<span class="c1">/// \brief    user code</span>
+<span class="c1">/// \author   Saffi Kelley Kieffer, Senior Software Engineer, OPS Controls</span>
+<span class="c1">/// \date     05.01.2023 (dd/mm/yy)</span>
+<span class="c1">/// \version  4.00.00.01</span>
+<span class="c1">/// \module   1.041.301.1000 - WPP</span>
+<span class="c1">/// \project  [CENSORED]-[CENSORED]</span>
+<span class="c1">//</span>
+<span class="c1">/// \controller_01_io</span>
+<span class="c1">//  Function Name       Connector   Action              REF</span>
+<span class="c1">//  lvl_flt_mV          B6          IN_VOLTAGE_10       AI0</span>
+<span class="c1">//  pto_01              C3          OUT_DIGITAL_CSO     DO_PWM0</span>
+<span class="c1">//  blw_vac             C2          OUT_DIGITAL_CSO     DO_PWM1</span>
+<span class="c1">//  blw_psi             C1          OUT_DIGITAL_CSO     DO_PWM2</span>
+<span class="c1">//  valve_01_open       B1          OUT_DIGITAL_CSO     DO_PWM3</span>
+<span class="c1">//  reel_left           B8          OUT_DIGITAL_CSO     DO_PWM4</span>
+<span class="c1">//  reel_right          C8          OUT_DIGITAL_CSO     DO_PWM5</span>
+<span class="c1">//  accel               C7          OUT_DIGITAL_CSO     DO_OUT0</span>
+<span class="c1">//  decel               C6          OUT_DIGITAL_CSO     DO_OUT1</span>
+<span class="c1">//</span>
+<span class="c1">/// \controller_02_io</span>
+<span class="c1">//  Function Name       Connector   Action              REF</span>
+<span class="c1">//  hose_in             C6          OUT_DIGITAL_CSO     DO_PWM0</span>
+<span class="c1">//  hose_out            C3          OUT_DIGITAL_CSO     DO_PWM1</span>
+<span class="c1">//  spare_01_mom        C2          OUT_DIGITAL_CSO     DO_PWM2</span>
+<span class="c1">//  spare_02_mom        C1          OUT_DIGITAL_CSO     DO_PWM3</span>
+<span class="c1">//  spare_03_latch      B1          OUT_DIGITAL_CSO     DO_PWM4</span>
+<span class="c1">//  spare_04_latch      B8          OUT_DIGITAL_CSO     DO_PWM5</span>
+<span class="c1">//  valve_02_open       C8          OUT_DIGITAL_CSO     DO_OUT0</span>
+<span class="c1">//------------------------------------------------------------------------------</span>
+</code></pre></div></div> <div class="caption"> An example showing an excerpt of documentation within a <code>.C</code> code file </div> <p>This documentation includes documenting network data, IO requirements (voltage, current limitations), wire harnessing lengths, and connector information. From this, I would work alongside my colleagues to determine the most appropriate and cost-effective solution to propose for the customer.</p> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <img src="/assets/img/projects/work_03/EXCEL_2023-02-07_12-33-45.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Initial Documentation" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </div> <div class="caption"> A documented example of a spreadsheet I developed outlying information for key stakeholders </div> <hr> <h3 id="showcase-developing-a-project-in-c">Showcase: Developing a Project in C</h3> <p>Following customer approval, I would start the development of core system components. These could often be implemented with minimal code.</p> <blockquote> <p>At past employers, we offered the benefits of both waterfall and agile software development methodologies. These simple projects often followed waterfall development techniques as they did not meet complexity requirements.</p> </blockquote> <p>This project used <code>C</code> and <code>proprietary embedded systems</code> to satisfy customer demands.</p> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">kp_2400_set_var</span><span class="p">(</span><span class="k">struct</span> <span class="n">Keypad_2400</span><span class="o">*</span> <span class="n">kp</span><span class="p">,</span> <span class="n">bios_can_msg_typ</span><span class="o">*</span> <span class="n">m</span><span class="p">){</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">);</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">);</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x04</span><span class="p">);</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">);</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x10</span><span class="p">);</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x20</span><span class="p">);</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x40</span><span class="p">);</span>
+    <span class="n">btn_set_status</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp</span><span class="o">-&gt;</span><span class="n">btn</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x80</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div> <div class="caption"> An elementary example of reading CAN traffic from a <code>.C</code> file </div> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">handle_controller_outputs</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+    <span class="kt">uint8_t</span> <span class="n">b0</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="c1">// Controller 01</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_PWM0</span><span class="p">,</span> <span class="n">pto_01</span><span class="p">);</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_PWM1</span><span class="p">,</span> <span class="n">blw_vac</span><span class="p">);</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_PWM2</span><span class="p">,</span> <span class="n">blw_psi</span><span class="p">);</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_PWM3</span><span class="p">,</span> <span class="n">valve_01_open</span><span class="p">);</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_PWM4</span><span class="p">,</span> <span class="n">reel_left</span><span class="p">);</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_PWM5</span><span class="p">,</span> <span class="n">reel_right</span><span class="p">);</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_OUT0</span><span class="p">,</span> <span class="n">accel</span><span class="p">);</span>
+    <span class="n">os_digout</span><span class="p">(</span><span class="n">DO_OUT1</span><span class="p">,</span> <span class="n">decel</span><span class="p">);</span>
+
+    <span class="c1">// Toggle &amp; pack bits for network debugging &amp; telematics</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">pto_01</span>        <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">blw_vac</span>       <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">blw_psi</span>       <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">valve_01_open</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">reel_left</span>     <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">reel_right</span>    <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">accel</span>         <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">7</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">decel</span>         <span class="o">&lt;&lt;</span> <span class="mi">7</span><span class="p">);</span>
+
+    <span class="c1">// Send message via proprietary CANopen</span>
+    <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">os_can_send_message</span><span class="p">(</span><span class="mh">0x604</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="n">b0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">);</span>
+
+    <span class="c1">// Controller 02</span>
+    <span class="c1">// Toggle &amp; pack bits for network debugging &amp; telematics</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">hose_in</span>           <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">hose_out</span>          <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">spare_01_mom</span>      <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">spare_02_mom</span>      <span class="o">&lt;&lt;</span> <span class="mi">3</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">spare_03_latch</span>    <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">spare_04_latch</span>    <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="p">);</span>
+    <span class="n">b0</span> <span class="o">=</span> <span class="n">b0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="p">(</span><span class="mh">0x01</span> <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">valve_02_open</span>     <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">);</span>
+
+    <span class="c1">// Send message via proprietary CANopen</span>
+    <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">os_can_send_message</span><span class="p">(</span><span class="mh">0x605</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="n">b0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div> <div class="caption"> An elementary example of setting output pins in a piece of embedded software </div> <hr> <h3 id="showcase-developing-a-project-in-c-qt-framework">Showcase: Developing a Project in C++ (Qt Framework)</h3> <p>Here is another example of the development of core system components. This excerpt is from a piece of software that I wrote to track engine maintenance reminders.</p> <p>This project used <code>C++</code> and <code>Qt Framework</code> to satisfy customer demands.</p> <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//------------------------------------------------------------------------------</span>
+<span class="c1">/// \file     engine_maintenance.h</span>
+<span class="c1">/// \brief    QObject to hold information pertaining to engine maintenance</span>
+<span class="c1">/// \author   Saffi Kelley Kieffer, Senior Software Engineer, OPS Controls</span>
+<span class="c1">/// \date     dd.mm.yyyy</span>
+<span class="c1">/// \version  VV.0X.0Y.0Z</span>
+<span class="c1">/// \module   [PRODUCT NAME]</span>
+<span class="c1">/// \project  [CENSORED]-[CENSORED]</span>
+<span class="c1">//------------------------------------------------------------------------------</span>
+<span class="cp">#ifndef ENGINE_MAINTENANCE_H
+#define ENGINE_MAINTENANCE_H
+</span>
+<span class="cp">#include</span> <span class="cpf">&lt;QDebug&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;QFileInfo&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;QObject&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;QSettings&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;QTimer&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span>
+<span class="c1">// Defines to remove magic numbers</span>
+<span class="cp">#define TEST_TIME      500
+#define SIX_MINS_IN_MS 360000
+#define MS_IN_HR       3600000
+</span>
+<span class="c1">// Define variables as Q_PROPERTY to access variables within .QML framework</span>
+<span class="k">class</span> <span class="nc">engine_maintenance</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QObject</span><span class="p">{</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">float</span> <span class="n">eng_hrs</span>      <span class="n">READ</span> <span class="n">eng_hrs</span>      <span class="n">WRITE</span> <span class="n">set_eng_hrs</span>      <span class="n">NOTIFY</span> <span class="n">eng_hrs_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">float</span> <span class="n">eng_hrs_left</span> <span class="n">READ</span> <span class="n">eng_hrs_left</span> <span class="n">WRITE</span> <span class="n">set_eng_hrs_left</span> <span class="n">NOTIFY</span> <span class="n">eng_hrs_left_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">float</span> <span class="n">eng_hrs_this</span> <span class="n">READ</span> <span class="n">eng_hrs_this</span> <span class="n">WRITE</span> <span class="n">set_eng_hrs_this</span> <span class="n">NOTIFY</span> <span class="n">eng_hrs_this_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">int</span>   <span class="n">maint_missed</span> <span class="n">READ</span> <span class="n">maint_missed</span> <span class="n">WRITE</span> <span class="n">set_maint_missed</span> <span class="n">NOTIFY</span> <span class="n">maint_missed_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">bool</span>  <span class="n">eng_oil</span>      <span class="n">READ</span> <span class="n">eng_oil</span>      <span class="n">WRITE</span> <span class="n">set_eng_oil</span>      <span class="n">NOTIFY</span> <span class="n">eng_oil_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">bool</span>  <span class="n">eng_oil_fil</span>  <span class="n">READ</span> <span class="n">eng_oil_fil</span>  <span class="n">WRITE</span> <span class="n">set_eng_oil_fil</span>  <span class="n">NOTIFY</span> <span class="n">eng_oil_fil_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">bool</span>  <span class="n">eng_fuel_fil</span> <span class="n">READ</span> <span class="n">eng_fuel_fil</span> <span class="n">WRITE</span> <span class="n">set_eng_fuel_fil</span> <span class="n">NOTIFY</span> <span class="n">eng_fuel_fil_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">bool</span>  <span class="n">pump_oil</span>     <span class="n">READ</span> <span class="n">pump_oil</span>     <span class="n">WRITE</span> <span class="n">set_pump_oil</span>     <span class="n">NOTIFY</span> <span class="n">pump_oil_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">bool</span>  <span class="n">seal_change</span>  <span class="n">READ</span> <span class="n">seal_change</span>  <span class="n">WRITE</span> <span class="n">set_seal_change</span>  <span class="n">NOTIFY</span> <span class="n">seal_change_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">bool</span>  <span class="n">valve_change</span> <span class="n">READ</span> <span class="n">valve_change</span> <span class="n">WRITE</span> <span class="n">set_valve_change</span> <span class="n">NOTIFY</span> <span class="n">valve_change_changed</span><span class="p">)</span>
+    <span class="n">Q_PROPERTY</span><span class="p">(</span><span class="kt">bool</span>  <span class="n">is_eng_kill</span>  <span class="n">READ</span> <span class="n">is_eng_kill</span>  <span class="n">WRITE</span> <span class="n">set_is_eng_kill</span>  <span class="n">NOTIFY</span> <span class="n">is_eng_kill_changed</span><span class="p">)</span>
+
+
+    <span class="n">Q_OBJECT</span>
+
+    <span class="nl">public:</span>
+    <span class="c1">// Constructor</span>
+    <span class="n">engine_maintenance</span><span class="p">();</span>
+    <span class="o">~</span><span class="n">engine_maintenance</span><span class="p">();</span>
+
+    <span class="c1">// Public getter functions</span>
+    <span class="kt">float</span> <span class="n">eng_hrs</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">eng_hrs_left</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">eng_hrs_this</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">int</span>   <span class="n">maint_missed</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span>  <span class="n">eng_oil</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span>  <span class="n">eng_oil_fil</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span>  <span class="n">eng_fuel_fil</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span>  <span class="n">pump_oil</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span>  <span class="n">seal_change</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span>  <span class="n">valve_change</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span>  <span class="n">is_eng_kill</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="c1">// Helper functions</span>
+    <span class="kt">void</span> <span class="n">set_is_eng_kill</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="n">needs_maintenance</span><span class="p">();</span>
+
+    <span class="n">QTimer</span> <span class="o">*</span><span class="n">engine_hrs_timer</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="n">slots</span><span class="o">:</span>
+    <span class="c1">// Slots for function interrupts within Qt framework</span>
+    <span class="kt">void</span> <span class="n">handle_eng_hrs_timer</span><span class="p">(</span><span class="kt">bool</span> <span class="n">is_low_oil_pressure</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">reset_flags</span><span class="p">();</span>
+
+    <span class="nl">private:</span>
+    <span class="c1">// Private setter functions</span>
+    <span class="kt">void</span> <span class="n">set_eng_hrs</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_eng_hrs_left</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_eng_hrs_this</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_maint_missed</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_eng_oil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_eng_oil_fil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_eng_fuel_fil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_pump_oil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_seal_change</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="n">set_valve_change</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">);</span>
+
+    <span class="c1">// Location of settings file saved within embedded system</span>
+    <span class="k">const</span> <span class="n">QString</span> <span class="n">SETTINGS_INI_FILE</span> <span class="o">=</span> <span class="s">"/opt/settings.ini"</span><span class="p">;</span>
+
+    <span class="c1">// Test Code</span>
+    <span class="c1">// const int TIME_FOR_TIMER_Q  = TEST_TIME;</span>
+
+    <span class="c1">// Production Code</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">TIME_FOR_TIMER_Q</span>  <span class="o">=</span> <span class="n">SIX_MINS_IN_MS</span><span class="p">;</span>
+
+    <span class="c1">// Private attributes</span>
+    <span class="kt">float</span> <span class="n">_eng_hrs</span><span class="p">;</span>         <span class="c1">// Engine hours, total reported</span>
+    <span class="kt">float</span> <span class="n">_eng_hrs_left</span><span class="p">;</span>    <span class="c1">// Engine hours, left within current maintenance period</span>
+    <span class="kt">float</span> <span class="n">_eng_hrs_this</span><span class="p">;</span>    <span class="c1">// Engine hours, since last maintenance recorded</span>
+    <span class="kt">int</span>   <span class="n">_maint_missed</span><span class="p">;</span>    <span class="c1">// Number of maintenance sessions missed</span>
+    <span class="kt">bool</span>  <span class="n">_eng_oil</span><span class="p">;</span>         <span class="c1">// Engine oil service needed</span>
+    <span class="kt">bool</span>  <span class="n">_eng_oil_fil</span><span class="p">;</span>     <span class="c1">// Engine oil filter service needed</span>
+    <span class="kt">bool</span>  <span class="n">_eng_fuel_fil</span><span class="p">;</span>    <span class="c1">// Engine fuel filter service needed</span>
+    <span class="kt">bool</span>  <span class="n">_pump_oil</span><span class="p">;</span>        <span class="c1">// Pump oil service needed</span>
+    <span class="kt">bool</span>  <span class="n">_seal_change</span><span class="p">;</span>     <span class="c1">// Pump seal service needed</span>
+    <span class="kt">bool</span>  <span class="n">_valve_change</span><span class="p">;</span>    <span class="c1">// Engine oil valve service needed</span>
+    <span class="kt">bool</span>  <span class="n">_is_eng_kill</span><span class="p">;</span>     <span class="c1">// Flag set by telematics to inhibit engine start</span>
+
+    <span class="k">private</span> <span class="n">slots</span><span class="o">:</span>
+    <span class="c1">// Slots for function interrupts within Qt framework</span>
+    <span class="kt">void</span> <span class="n">load_variables_from_disk</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">save_variables_to_disk</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">increase_eng_hrs</span><span class="p">();</span>
+
+    <span class="nl">signals:</span>
+    <span class="c1">// Function interrupts within Qt framework</span>
+    <span class="kt">void</span> <span class="n">eng_hrs_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">eng_hrs_left_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">eng_hrs_this_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">maint_missed_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">eng_oil_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">eng_oil_fil_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">eng_fuel_fil_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">pump_oil_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">seal_change_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">valve_change_changed</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">is_eng_kill_changed</span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="cp">#endif // ENGINE_MAINTENANCE_H
+</span></code></pre></div></div> <div class="caption"> An example of an increased level of complexity from a software <code>.h</code> file </div> <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//------------------------------------------------------------------------------</span>
+<span class="c1">/// \file     engine_maintenance.cpp</span>
+<span class="c1">/// \brief    QObject to hold information pertaining to engine maintenance</span>
+<span class="c1">/// \author   Saffi Kelley Kieffer, Senior Software Engineer, OPS Controls</span>
+<span class="c1">/// \date     dd.mm.yyyy</span>
+<span class="c1">/// \version  VV.0X.0Y.0Z</span>
+<span class="c1">/// \module   [PRODUCT NAME]</span>
+<span class="c1">/// \project  [CENSORED]-[CENSORED]</span>
+<span class="c1">//------------------------------------------------------------------------------</span>
+<span class="cp">#include</span> <span class="cpf">"engine_maintenance.h"</span><span class="cp">
+</span>
+<span class="c1">// Constructor</span>
+<span class="n">engine_maintenance</span><span class="o">::</span><span class="n">engine_maintenance</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Start a new QTimer to record engine hours</span>
+    <span class="n">engine_hrs_timer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">QTimer</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+    <span class="c1">// Connect system interrupts with respective slots</span>
+    <span class="n">QObject</span><span class="o">::</span><span class="n">connect</span><span class="p">(</span><span class="n">engine_hrs_timer</span><span class="p">,</span> <span class="n">SIGNAL</span><span class="p">(</span><span class="n">timeout</span><span class="p">()),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span><span class="p">(</span><span class="n">increase_eng_hrs</span><span class="p">()));</span>
+    <span class="n">QObject</span><span class="o">::</span><span class="n">connect</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="n">SIGNAL</span><span class="p">(</span><span class="n">is_eng_kill_changed</span><span class="p">()),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span><span class="p">(</span><span class="n">save_variables_to_disk</span><span class="p">()));</span>
+
+    <span class="c1">// Initialize variables</span>
+    <span class="n">_eng_hrs</span>      <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+    <span class="n">_eng_hrs_left</span> <span class="o">=</span> <span class="mf">525.0</span><span class="p">;</span>
+    <span class="n">_eng_hrs_this</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+    <span class="n">_maint_missed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">_eng_oil</span>      <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">_eng_oil_fil</span>  <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">_eng_fuel_fil</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">_pump_oil</span>     <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">_seal_change</span>  <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">_valve_change</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">_is_eng_kill</span>  <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+    <span class="c1">// Load any saved data on embedded device</span>
+    <span class="n">load_variables_from_disk</span><span class="p">();</span>
+
+    <span class="c1">// Disable engine hours timer while engine oil is not pressurized</span>
+    <span class="n">handle_eng_hrs_timer</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// Destructor</span>
+<span class="n">engine_maintenance</span><span class="o">::~</span><span class="n">engine_maintenance</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Deallocate QTimer from heap</span>
+    <span class="k">delete</span> <span class="n">engine_hrs_timer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Public getter functions</span>
+<span class="kt">float</span> <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">eng_hrs</span><span class="p">()</span> <span class="k">const</span>       <span class="p">{</span> <span class="k">return</span> <span class="n">_eng_hrs</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">float</span> <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">eng_hrs_left</span><span class="p">()</span> <span class="k">const</span>  <span class="p">{</span> <span class="k">return</span> <span class="n">_eng_hrs_left</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">float</span> <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">eng_hrs_this</span><span class="p">()</span> <span class="k">const</span>  <span class="p">{</span> <span class="k">return</span> <span class="n">_eng_hrs_this</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">int</span>   <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">maint_missed</span><span class="p">()</span> <span class="k">const</span>  <span class="p">{</span> <span class="k">return</span> <span class="n">_maint_missed</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">eng_oil</span><span class="p">()</span> <span class="k">const</span>       <span class="p">{</span> <span class="k">return</span> <span class="n">_eng_oil</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">eng_oil_fil</span><span class="p">()</span> <span class="k">const</span>   <span class="p">{</span> <span class="k">return</span> <span class="n">_eng_oil_fil</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">eng_fuel_fil</span><span class="p">()</span> <span class="k">const</span>  <span class="p">{</span> <span class="k">return</span> <span class="n">_eng_fuel_fil</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">pump_oil</span><span class="p">()</span> <span class="k">const</span>      <span class="p">{</span> <span class="k">return</span> <span class="n">_pump_oil</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">seal_change</span><span class="p">()</span> <span class="k">const</span>   <span class="p">{</span> <span class="k">return</span> <span class="n">_seal_change</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">valve_change</span><span class="p">()</span> <span class="k">const</span>  <span class="p">{</span> <span class="k">return</span> <span class="n">_valve_change</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">is_eng_kill</span><span class="p">()</span> <span class="k">const</span>   <span class="p">{</span> <span class="k">return</span> <span class="n">_is_eng_kill</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c1">// Private setter functions</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_eng_hrs</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_eng_hrs</span><span class="p">){</span>
+        <span class="n">_eng_hrs</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">eng_hrs_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_eng_hrs_left</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_eng_hrs_left</span><span class="p">){</span>
+        <span class="n">_eng_hrs_left</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">eng_hrs_left_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_eng_hrs_this</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_eng_hrs_this</span><span class="p">){</span>
+        <span class="n">_eng_hrs_this</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">eng_hrs_this_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_maint_missed</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_maint_missed</span><span class="p">){</span>
+        <span class="n">_maint_missed</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">maint_missed_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_eng_oil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_eng_oil</span><span class="p">){</span>
+        <span class="n">_eng_oil</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">eng_oil_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_eng_oil_fil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_eng_oil_fil</span><span class="p">){</span>
+        <span class="n">_eng_oil_fil</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">eng_oil_fil_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_eng_fuel_fil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_eng_fuel_fil</span><span class="p">){</span>
+        <span class="n">_eng_fuel_fil</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">eng_fuel_fil_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_pump_oil</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_pump_oil</span><span class="p">){</span>
+        <span class="n">_pump_oil</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">pump_oil_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_seal_change</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_seal_change</span><span class="p">){</span>
+        <span class="n">_seal_change</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">seal_change_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_valve_change</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_valve_change</span><span class="p">){</span>
+        <span class="n">_valve_change</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">valve_change_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">set_is_eng_kill</span><span class="p">(</span><span class="k">const</span> <span class="kt">bool</span> <span class="o">&amp;</span><span class="n">v</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">!=</span> <span class="n">_is_eng_kill</span><span class="p">){</span>
+        <span class="n">_is_eng_kill</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">is_eng_kill_changed</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Update flag if system needs maintenance on respective slots</span>
+<span class="kt">bool</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">needs_maintenance</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">eng_oil</span><span class="p">()</span>  <span class="o">||</span> <span class="n">eng_oil_fil</span><span class="p">()</span> <span class="o">||</span> <span class="n">eng_fuel_fil</span><span class="p">()</span> <span class="o">||</span>
+           <span class="n">pump_oil</span><span class="p">()</span> <span class="o">||</span> <span class="n">seal_change</span><span class="p">()</span> <span class="o">||</span> <span class="n">valve_change</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="c1">// Ensure that timer is only running if we have oil pressure</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">handle_eng_hrs_timer</span><span class="p">(</span><span class="kt">bool</span> <span class="n">is_low_oil_pressure</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">is_low_oil_pressure</span><span class="p">){</span>
+        <span class="n">engine_hrs_timer</span><span class="o">-&gt;</span><span class="n">stop</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="n">engine_hrs_timer</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">(</span><span class="n">TIME_FOR_TIMER_Q</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// Reset all flags during the case that the system has been maintained</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">reset_flags</span><span class="p">(){</span>
+    <span class="n">set_eng_oil</span>     <span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">set_eng_oil_fil</span> <span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">set_eng_fuel_fil</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">set_pump_oil</span>    <span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">set_seal_change</span> <span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">set_valve_change</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+
+    <span class="n">set_maint_missed</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// Simple functionality to load information from memory</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">load_variables_from_disk</span><span class="p">(){</span>
+    <span class="n">QFileInfo</span> <span class="n">file_to_check</span><span class="p">(</span><span class="n">SETTINGS_INI_FILE</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">file_to_check</span><span class="p">.</span><span class="n">exists</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">file_to_check</span><span class="p">.</span><span class="n">isFile</span><span class="p">()){</span>
+        <span class="n">QSettings</span> <span class="n">settings</span><span class="p">(</span><span class="n">SETTINGS_INI_FILE</span><span class="p">,</span> <span class="n">QSettings</span><span class="o">::</span><span class="n">IniFormat</span><span class="p">);</span>
+
+        <span class="n">settings</span><span class="p">.</span><span class="n">beginGroup</span><span class="p">(</span><span class="s">"General"</span><span class="p">);</span>
+        <span class="n">set_eng_hrs</span>     <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"eng_hrs"</span>     <span class="p">,</span>     <span class="mi">0</span><span class="p">).</span><span class="n">toFloat</span><span class="p">());</span>
+        <span class="n">set_eng_hrs_left</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"eng_hrs_left"</span><span class="p">,</span>   <span class="mi">525</span><span class="p">).</span><span class="n">toFloat</span><span class="p">());</span>
+        <span class="n">set_eng_hrs_this</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"eng_hrs_this"</span><span class="p">,</span>     <span class="mi">0</span><span class="p">).</span><span class="n">toFloat</span><span class="p">());</span>
+        <span class="n">set_maint_missed</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"maint_missed"</span><span class="p">,</span>     <span class="mi">0</span><span class="p">).</span><span class="n">toInt</span><span class="p">());</span>
+        <span class="n">set_eng_oil</span>     <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"eng_oil"</span>     <span class="p">,</span> <span class="nb">false</span><span class="p">).</span><span class="n">toBool</span><span class="p">());</span>
+        <span class="n">set_eng_oil_fil</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"eng_oil_fil"</span> <span class="p">,</span> <span class="nb">false</span><span class="p">).</span><span class="n">toBool</span><span class="p">());</span>
+        <span class="n">set_eng_fuel_fil</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"eng_fuel_fil"</span><span class="p">,</span> <span class="nb">false</span><span class="p">).</span><span class="n">toBool</span><span class="p">());</span>
+        <span class="n">set_pump_oil</span>    <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"pump_oil"</span>    <span class="p">,</span> <span class="nb">false</span><span class="p">).</span><span class="n">toBool</span><span class="p">());</span>
+        <span class="n">set_seal_change</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"seal_change"</span> <span class="p">,</span> <span class="nb">false</span><span class="p">).</span><span class="n">toBool</span><span class="p">());</span>
+        <span class="n">set_valve_change</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"valve_change"</span><span class="p">,</span> <span class="nb">false</span><span class="p">).</span><span class="n">toBool</span><span class="p">());</span>
+        <span class="n">set_is_eng_kill</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="s">"is_eng_kill"</span> <span class="p">,</span> <span class="nb">false</span><span class="p">).</span><span class="n">toBool</span><span class="p">());</span>
+        <span class="n">settings</span><span class="p">.</span><span class="n">endGroup</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// Simple functionality to save information from memory</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">save_variables_to_disk</span><span class="p">(){</span>
+    <span class="n">QSettings</span> <span class="n">settings</span><span class="p">(</span><span class="n">SETTINGS_INI_FILE</span><span class="p">,</span> <span class="n">QSettings</span><span class="o">::</span><span class="n">IniFormat</span><span class="p">);</span>
+
+    <span class="n">settings</span><span class="p">.</span><span class="n">beginGroup</span><span class="p">(</span><span class="s">"General"</span><span class="p">);</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"eng_hrs"</span>     <span class="p">,</span> <span class="n">eng_hrs</span>     <span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"eng_hrs_left"</span><span class="p">,</span> <span class="n">eng_hrs_left</span><span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"eng_hrs_this"</span><span class="p">,</span> <span class="n">eng_hrs_this</span><span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"maint_missed"</span><span class="p">,</span> <span class="n">maint_missed</span><span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"eng_oil"</span>     <span class="p">,</span> <span class="n">eng_oil</span>     <span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"eng_oil_fil"</span> <span class="p">,</span> <span class="n">eng_oil_fil</span> <span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"eng_fuel_fil"</span><span class="p">,</span> <span class="n">eng_fuel_fil</span><span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"pump_oil"</span>    <span class="p">,</span> <span class="n">pump_oil</span>    <span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"seal_change"</span> <span class="p">,</span> <span class="n">seal_change</span> <span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"valve_change"</span><span class="p">,</span> <span class="n">valve_change</span><span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="s">"is_eng_kill"</span> <span class="p">,</span> <span class="n">is_eng_kill</span> <span class="p">());</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">sync</span><span class="p">();</span>
+    <span class="n">settings</span><span class="p">.</span><span class="n">endGroup</span><span class="p">();</span>
+    <span class="n">sync</span><span class="p">();</span> <span class="c1">// Immediately write cached writes to disk</span>
+<span class="p">}</span>
+<span class="c1">// Increases engine hours, called every 6 minutes (1/10th of an hour)</span>
+<span class="kt">void</span>  <span class="n">engine_maintenance</span><span class="o">::</span><span class="n">increase_eng_hrs</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Test Code</span>
+    <span class="c1">// set_eng_hrs(eng_hrs() + 5);</span>
+
+    <span class="c1">// Production Code</span>
+    <span class="n">set_eng_hrs</span><span class="p">(</span><span class="n">eng_hrs</span><span class="p">()</span> <span class="o">+</span> <span class="p">((</span><span class="kt">float</span><span class="p">)</span><span class="n">TIME_FOR_TIMER_Q</span><span class="o">/</span><span class="n">MS_IN_HR</span><span class="p">));</span>
+
+    <span class="c1">// Lapsed engine hours has passed the first maintenance period</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">eng_hrs</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">525.0</span><span class="p">){</span>
+        <span class="c1">// Every 500 hours set basic maintenance reminders</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">fmod</span><span class="p">((</span><span class="n">eng_hrs</span><span class="p">()</span> <span class="o">-</span> <span class="mi">25</span><span class="p">),</span> <span class="mf">500.0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="n">set_maint_missed</span><span class="p">(</span><span class="n">maint_missed</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+
+            <span class="n">set_eng_oil</span>     <span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+            <span class="n">set_eng_oil_fil</span> <span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+            <span class="n">set_eng_fuel_fil</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+            <span class="n">set_pump_oil</span>    <span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Every 3000 hours set seal maintenance reminder </span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">fmod</span><span class="p">((</span><span class="n">eng_hrs</span><span class="p">()</span> <span class="o">-</span> <span class="mi">25</span><span class="p">),</span> <span class="mf">3000.0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="n">set_seal_change</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="c1">// Every 1500 hours set valve maintenance reminder</span>
+        <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">fmod</span><span class="p">((</span><span class="n">eng_hrs</span><span class="p">()</span> <span class="o">-</span> <span class="mi">25</span><span class="p">),</span> <span class="mf">1500.0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="n">set_valve_change</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Set the number of hours left on the current maintenance period</span>
+        <span class="n">set_eng_hrs_left</span><span class="p">(</span><span class="mf">500.0</span> <span class="o">-</span> <span class="n">fmod</span><span class="p">((</span><span class="n">eng_hrs</span><span class="p">()</span> <span class="o">-</span> <span class="mi">25</span><span class="p">),</span> <span class="mf">500.0</span><span class="p">));</span>
+
+        <span class="c1">// Set the number of hours lapsed since the last maintenance period</span>
+        <span class="n">set_eng_hrs_this</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="p">((</span><span class="mf">500.0</span> <span class="o">-</span> <span class="n">eng_hrs_left</span><span class="p">())</span> <span class="o">+</span> <span class="p">((</span><span class="n">maint_missed</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">500</span><span class="p">)));</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="n">set_eng_hrs_left</span><span class="p">(</span><span class="mf">525.0</span> <span class="o">-</span> <span class="n">eng_hrs</span><span class="p">());</span>
+        <span class="n">set_eng_hrs_this</span><span class="p">(</span><span class="n">eng_hrs_left</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="n">save_variables_to_disk</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div> <div class="caption"> An example of an increased level of complexity from a software <code>.CPP</code> file </div> <hr> <h3 id="showcase-testing-verification--maintenance">Showcase: Testing, Verification, &amp; Maintenance</h3> <p>After developing a software application system, the product goes under verification using several testing measures to ensure that it passes all unit, end-to-end, and integration testing procedures.</p> <p>Following all testing procedures passing, an official manual describing product functionality is written and sent to the customer for approval.</p> <p>After customer approval, the appropriate production files become populated in the internal production framework for continued sale and support.</p> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <img src="/assets/img/projects/work_03/Acrobat_2023-02-07_12-34-28.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Final Documentation" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </div> <div class="caption"> A documented excerpt of a system manual I developed outlying information for key stakeholders </div> </article> </div> </div> <footer class="fixed-bottom"> <div class="container mt-0"> © Copyright 2023 Saffi Kelley Kieffer. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script> <script defer src="/assets/js/masonry.js" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js"></script> <script defer src="/assets/js/common.js"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script type="text/javascript">function progressBarSetup(){"max"in document.createElement("progress")?(initializeProgressElement(),$(document).on("scroll",function(){progressBar.attr({value:getCurrentScrollPosition()})}),$(window).on("resize",initializeProgressElement)):(resizeProgressBar(),$(document).on("scroll",resizeProgressBar),$(window).on("resize",resizeProgressBar))}function getCurrentScrollPosition(){return $(window).scrollTop()}function initializeProgressElement(){let e=$("#navbar").outerHeight(!0);$("body").css({"padding-top":e}),$("progress-container").css({"padding-top":e}),progressBar.css({top:e}),progressBar.attr({max:getDistanceToScroll(),value:getCurrentScrollPosition()})}function getDistanceToScroll(){return $(document).height()-$(window).height()}function resizeProgressBar(){progressBar.css({width:getWidthPercentage()+"%"})}function getWidthPercentage(){return getCurrentScrollPosition()/getDistanceToScroll()*100}const progressBar=$("#progress");window.onload=function(){setTimeout(progressBarSetup,50)};</script> </body> </html>
