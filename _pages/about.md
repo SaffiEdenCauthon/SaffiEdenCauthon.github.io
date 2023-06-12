@@ -6,7 +6,7 @@ subtitle: Software Engineer
 
 profile:
   align: right
-  image: hd_selfie.jpg
+  image: hd_selfie.jpeg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Findlay, OH 45840</p>
