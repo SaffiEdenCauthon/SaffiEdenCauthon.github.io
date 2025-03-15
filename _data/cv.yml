@@ -2,15 +2,15 @@
   type: map
   contents:
     - name: Full Name
-      value: Saffi S. Kelley Kieffer
+      value: Saffi Eden Cauthon
     - name: Title
-      value: Senior Software Engineer
+      value: Senior Software Engineer II / Tech Lead
     - name: Email
-      value: saffi.kelley.kieffer@gmail.com
+      value: saffi.cauthon@gmail.com
     - name: Phone
       value: (419) 721-0249
     - name: Location
-      value: Findlay, OH 45840
+      value: Carmel, IN 46289
 
 - title: Education
   type: time_table
@@ -62,6 +62,7 @@
     items:
     - Adobe Creative Suite
     - FishBowl
+    - Monday.com
     - Git & GitHub
     - Microsoft Office Suite / Office 365
     - Oracle VM VirtualBox
@@ -70,9 +71,9 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Senior Software Engineer
+    - title: Senior Software Engineer II / Tech Lead
       institution: OPS Controls
-      year: 2017 - 2023
+      year: 2017 - 2025
       description:
         - Led & delivered large-scale collaborative projects with industry-leading OEMs
         - Assisted in leading project & solution design
@@ -119,13 +120,15 @@
     - title: Retro Video Games
       items:
         - Basic electrical skills
-    - title: Pokémon VGC
+    - title: Pokémon GO & Pokémon VGC
       items:
+        - Leading Large Groups of >100 Members During Events
+        - Leading Large Communication Platforms of > 1,750 Members
         - Strategy & Planning
         - Competitive Environment
     - title: Old School Runescape
       items:
         - Competitive Environment
-        - Game Engine Mastery
+        - Game Engine Mastery Via Reverse Engineering
         - Personal Projects With Developers
         - Community Website Contributions

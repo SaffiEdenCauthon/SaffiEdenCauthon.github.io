@@ -4,9 +4,9 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Saffi
-middle_name:
-last_name: Kelley Kieffer
-email: saffi.kelley.kieffer@gmail.com
+middle_name: Eden
+last_name: Cauthon
+email: saffi.cauthon@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A website to display career progress.
 footer_text: > # the ">" symbol means to ignore newlines until "keywords:"
@@ -14,7 +14,7 @@ footer_text: > # the ">" symbol means to ignore newlines until "keywords:"
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 👩‍💻  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-url: https://saffikelleykieffer.github.io # the base hostname & protocol for your site
+url: https://SaffiEdenCauthon.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -67,11 +67,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: SaffiKelleyKieffer
+github_username: SaffiEdenCauthon
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: saffi-kelley-kieffer
+linkedin_username: saffi-eden-cauthon
 telegram_username: # your Telegram user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -135,7 +135,7 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
 # the information below.
 giscus:
-  repo: SaffiKelleyKieffer/SaffiKelleyKieffer.github.io # <your-github-user-name>/<your-github-repo-name>
+  repo: SaffiEdenCauthon/SaffiEdenCauthon.github.io # <your-github-user-name>/<your-github-repo-name>
   repo_id: R_kgDOI6kUQw
   category: General              # name of the category under which discussions will be created
   category_id: DIC_kwDOI6kUQ84CUCef
@@ -263,7 +263,7 @@ display_tags: ['news', 'code', 'games', 'fun', 'work'] # this tags will be dispa
 
 scholar:
 
-  last_name: [Kelley Kieffer]
+  last_name: [Cauthon]
   first_name: [Saffi]
 
   style: apa

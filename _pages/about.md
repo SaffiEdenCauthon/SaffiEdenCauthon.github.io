@@ -9,7 +9,7 @@ profile:
   image: hd_selfie.jpg
   image_circular: true # crops the image to make it circular
   address: >
-    <p>Findlay, OH 45840</p>
+    <p>Carmel, IN, 46280</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -23,7 +23,7 @@ At OPS Controls I have assisted in leading project & solution design, **full-sta
 
 **I have successfully proven to lead and deliver large-scale collaborative projects with industry-leading OEMs** such as Cummins, Screen Machine Industries, Smith-Griffin Armor, Link-Belt Cranes, and Vermeer Corporation.
 
-I have over **six years of experience** leading, developing, and implementing innovative software applications for company success.
+I have over **eight years of experience** leading, developing, and implementing innovative software applications for company success.
 
 My passion is to help integrate clean, efficient, and scalable software to produce the best solution possible.
 
