@@ -7,7 +7,7 @@ description: >
   <p>For further projects, contact me using the information on my home page.</p>
 nav: true
 nav_order: 2
-display_categories: []
+display_categories: [work]
 # display_categories: [work, fun] # TODO: uncomment this when further projects are available
 horizontal: false
 ---
